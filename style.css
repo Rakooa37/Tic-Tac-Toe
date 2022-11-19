@@ -1,0 +1,121 @@
+html{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.symbols{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 17em;
+}
+
+.grid-container{
+    background-image: linear-gradient(to bottom right, #38A2D7, #561139);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid: repeat(3, 10rem)/repeat(3, 10rem);
+    border: 1px solid black;
+}
+
+.item{
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+    background-color: #de6262; 
+    margin-top: 2em;
+    border: none;
+    color: white;
+    padding: 0.75em 2em;
+    text-align: center;
+    font-size: 1.5rem ;
+    align-self: center;
+    border-radius: 8%;
+    cursor: pointer;
+}
+
+.button-symbol{
+    background-color: grey; 
+    border: none;
+    color: white;
+    padding: 0.5em 1.5em;
+    text-align: center;
+    font-size: 1.8rem ;
+    align-self: center;
+    border-radius: 8%;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+.modal-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    background-size: cover;
+
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 18em;
+    border: 2px solid #fc4a1a;
+    color:white;
+    background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+    font-size:  40px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 1em;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1.7s;
+    animation-name: animatetop;
+    animation-duration: 1.7s
+}
+
+.close{
+    margin-left: auto;
+    padding-right: 0.5rem;
+ }
+
+.congratulations{
+    font-size: 75px;
+
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+
