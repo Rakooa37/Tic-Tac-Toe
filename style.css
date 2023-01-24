@@ -10,13 +10,13 @@ body{
 .symbols{
     display: flex;
     justify-content: center;
-    width: 100%;
-    gap: 17em;
+    gap: 9rem;
+    
 }
 
 .grid-container{
     background-image: linear-gradient(to bottom right, #38A2D7, #561139);
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction:  column;
@@ -26,7 +26,8 @@ body{
 
 .grid{
     display: grid;
-    grid: repeat(3, 10rem)/repeat(3, 10rem);
+    grid-template-columns: repeat(3, minmax(5rem,10rem));
+    grid-template-rows: repeat(3, minmax(5rem,10rem));
     border: 1px solid black;
 }
 
